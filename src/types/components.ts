@@ -10,7 +10,8 @@ import type {
   Holding,
   Portfolio,
   ValidationError,
-  LoadingState
+  LoadingState,
+  Currency
 } from './index';
 
 // Shared component props
@@ -29,7 +30,7 @@ export interface CurrencyInputProps extends BaseComponentProps {
   error?: string;
   min?: number;
   max?: number;
-  currency?: string;
+  currency?: Currency;
 }
 
 export interface PercentageInputProps extends BaseComponentProps {
@@ -92,7 +93,7 @@ export interface MortgageInputFormProps extends BaseComponentProps {
 }
 
 export interface MortgageResultsProps extends BaseComponentProps {
-  results: MortgageResults;
+  results: MortgageResults | null;
   loading?: boolean;
 }
 

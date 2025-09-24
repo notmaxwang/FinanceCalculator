@@ -1,8 +1,8 @@
 // Common Types and Interfaces
 
 export interface UserSettings {
-  currency: string;
-  theme: 'light' | 'dark';
+  currency: Currency;
+  theme: Theme;
   notifications: boolean;
   autoSave: boolean;
   dateFormat: 'MM/DD/YYYY' | 'DD/MM/YYYY' | 'YYYY-MM-DD';
